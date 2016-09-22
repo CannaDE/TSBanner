@@ -53,9 +53,9 @@
 		$textColor = imagecolorallocate($image, 79, 95, 5);
 		//imagestring($image, 5, 10, 5, $text, $textColor);
 		//imagettftext($image, 18, 0, 5, 225, $textColor, "fonts/Exo-Medium.ttf", $text);
-		imagettftext($image, 20, 0, 60, 200, $textColor, "fonts/Exo-LightItalic.ttf", $textTime);
-		imagettftext($image, 20, 0, 60, 240, $textColor, "fonts/Exo-LightItalic.ttf", $textDate);
-		imagettftext($image, 20, 0, 60, 280, $textColor, "fonts/Exo-LightItalic.ttf", $textClients);
+		imagettftext($image, 20, 0, 60, 200, $textColor, "fonts/Exo-Medium.ttf", $textTime);
+		imagettftext($image, 20, 0, 60, 240, $textColor, "fonts/Exo-Medium.ttf", $textDate);
+		imagettftext($image, 20, 0, 60, 280, $textColor, "fonts/Exo-Medium.ttf", $textClients);
 		imagejpeg($image);
 	}
 	else {
