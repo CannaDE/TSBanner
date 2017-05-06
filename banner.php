@@ -2,14 +2,17 @@
 //-> Copyright © 2016 by Canna
 //-> 4.3.2017 Changes by Lars "elyday" <me@elyday.net>
 //-> Version: 0.9.7
+
 include('lib/ts3admin.class.php');
 include('config.inc.php');
 header('Content-Type:image/png');
 date_default_timezone_set('Europe/Berlin');;
+
 $date = date('d.F Y');
 $time = date('H:i') . " Uhr";
 $slots = 0;
 $maxSlots = 0;
+
 function tsconnect()
 {
     global $ts3config;
@@ -31,6 +34,7 @@ function tsconnect()
     } else
         return '<p>Es ist ein unerwarteter Fehler aufgetreten. </p>';
 }
+
 $ts3 = tsconnect();
 $sinfo = $ts3->serverInfo();
 if ($sinfo['success']) {
